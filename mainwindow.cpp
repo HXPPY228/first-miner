@@ -38,3 +38,14 @@ void MainWindow::on_pushButton_2_clicked()
     }
 }
 
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    int a = ui->progressBar->value();
+    a--;
+    ui->progressBar->setValue(a);
+    if (a!=100){
+        ui->label->setText(" ");
+    }
+}
+
